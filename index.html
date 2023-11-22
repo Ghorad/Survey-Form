@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Dota Survey</h1>
+    <p id="description">This survey aims to let people find players to party with.</p>
+  </head>
+  <body>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Name</label> <input id="name" type="text" placeholder="Enter your name" required />
+      <label id="email-label">Email</label> <input id="email" type="email" placeholder="Enter your email" required />
+      <label id="number-label">MMR</label> <input id="number" type="number" min="4000" max="5000" placeholder="Enter your MMR" required />
+      </fieldset>
+      <fieldset>
+      <select id="dropdown">
+        <option value="">Select your role</option>
+        <option value="1">Mid</option>
+        <option value="2">Carry</option>
+        <option value="3">Offlane</option>
+        <option value="4">Support</option>
+        <option value="5">Hard Support</option>
+      </select>
+      <label><input class="inline" value="1" name="ranked-casual" type="radio"> Ranked Play</label>
+      <label><input class="inline" value="2" name="ranked-casual" type="radio"> Casual Play</label>
+      <label><input type="checkbox" name="notification" class="inline" value="1" required /> I accept the rules about this service.</label>
+      <label><input type="checkbox" name="notification" class="inline" value="2" /> Notify me when there are people who match my criterias.</label>
+      <label>Things that you want to add: <textarea name="suggestions" rows="3" cols="30">
+        </textarea>
+      </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
